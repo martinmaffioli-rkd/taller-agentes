@@ -1,0 +1,25 @@
+# Plantilla del agente. Claude Code copia la carpeta plantilla/ a mi-agente/ y la completa con vos.
+# No hace falta que edites nada a mano.
+
+nombre: ""            # Ej: "Asistente de viáticos"
+autor: ""             # Tu nombre, tal como querés que aparezca en la galería
+empresa_o_area: ""    # Ej: "Constructora del Sur (ficticia) · Administración"
+descripcion: ""       # Una línea: qué hace y para quién
+modelo: claude-haiku-4-5-20251001
+
+# PIEZA 1 · INSTRUCCIONES: quién es el agente y qué reglas sigue (siempre presentes)
+instrucciones: |
+  (Claude Code escribe acá el system prompt del agente)
+
+# PIEZA 2 · BASE DE CONOCIMIENTO: documentos ficticios en conocimiento/originales/
+#   (Word, Excel, PDF o CSV). scripts/convertir.py los pasa a texto en conocimiento/.
+
+# PIEZA 3 · SKILL: procedimiento para una tarea puntual, en skill/SKILL.md.
+
+# PIEZA 4 · HERRAMIENTA: búsqueda y lectura web.
+web: true
+
+mensajes_de_prueba:
+  - ""
+  - ""
+  - ""
